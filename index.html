@@ -340,7 +340,7 @@
            style="width:100%; border-radius:8px;">
 
       <h2 class="subtitle has-text-centered">
-        The merge pipeline of LiteVGGT efficiently combines information from multiple input images, leveraging geometric correlations to enhance 3D reconstruction accuracy.
+        We augment VGGT by placing a Geometry-aware Token Merging module on both sides of its global attention. Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
       </h2>
 
     </div>
@@ -349,32 +349,51 @@
 <!-- End teaser -->
 
 
-<!-- Teaser video and image -->
+<!-- Two Demo Section -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+
+      <!-- === 第一组 Demo === -->
       <div class="columns is-vcentered">
-        <!-- Left column with image -->
+        <!-- 左图 -->
         <div class="column is-half">
-          <img src="static/images/demo2.png" alt="Teaser Image" style="width: 100%; height: auto; border-radius: 8px;">
+          <img src="static/images/demo1.png" alt="Demo 1 Image" style="width: 100%; height: auto; border-radius: 8px;">
         </div>
 
-        <!-- Right column with video -->
+        <!-- 右视频 -->
         <div class="column is-half">
-          <video poster="" id="tree" autoplay controls muted loop style="width: 100%; height: 100%;" preload="metadata">
+          <video autoplay controls muted loop style="width: 100%; height: 100%; border-radius: 8px;" preload="metadata">
+            <source src="static/videos/grasp_demo1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- === 第二组 Demo === -->
+      <div class="columns is-vcentered" style="margin-top: 2rem;">
+        <!-- 左图 -->
+        <div class="column is-half">
+          <img src="static/images/demo2.png" alt="Demo 2 Image" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+
+        <!-- 右视频 -->
+        <div class="column is-half">
+          <video autoplay controls muted loop style="width: 100%; height: 100%; border-radius: 8px;" preload="metadata">
             <source src="static/videos/grasp_demo2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
 
-      <!-- Video description below -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+      <!-- === 底部注释 === -->
+      <h2 class="subtitle has-text-centered" style="margin-top: 2rem;">
+        LiteVGGT’s reconstructed point clouds are used for robotic grasping. Despite minor reconstruction deviations, the accuracy is sufficient for end-side grasp execution, demonstrating the practical reliability of LiteVGGT.
       </h2>
+
     </div>
   </div>
 </section>
-<!-- End teaser video and image -->
+<!-- End Two Demo Section -->
+
 
 
 
