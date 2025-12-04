@@ -340,7 +340,7 @@
            style="width:100%; border-radius:8px;">
 
       <h2 class="subtitle has-text-centered">
-        We augment VGGT by placing a Geometry-aware Token Merging module on both sides of its global attention. Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
+        We augment VGGT by placing a **Geometry-aware Token Merging** module on both sides of its global attention. Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
       </h2>
 
     </div>
@@ -370,7 +370,7 @@
       </div>
 
       <!-- === 第二组 Demo === -->
-      <div class="columns is-vcentered" style="margin-top: 2rem;">
+      <div class="columns is-vcentered">
         <!-- 左图 -->
         <div class="column is-half">
           <img src="static/images/demo2.png" alt="Demo 2 Image" style="width: 100%; height: auto; border-radius: 8px;">
@@ -395,128 +395,88 @@
 <!-- End Two Demo Section -->
 
 
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-    
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3 has-text-centered">Pipeline Demonstration</h2>
+
+      <!-- Carousel container -->
       <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- Video 1 -->
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/Barn_merged.mp4" type="video/mp4">
           </video>
         </div>
+
+        <!-- Video 2 -->
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/truck_merged.mp4" type="video/mp4">
           </video>
         </div>
+
+        <!-- Video 3 -->
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
           <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/heads_merged.mp4" type="video/mp4">
           </video>
         </div>
+
+        <!-- ✅ New Video 4 -->
+        <div class="item item-video4">
+          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/pupkin_merged.mp4" type="video/mp4">
+          </video>
+        </div>
+
       </div>
+      <!-- End carousel -->
+
+
     </div>
   </div>
 </section>
 <!-- End video carousel -->
 
 
+ <!-- 一些评估结果-->
+<section class="hero teaser" style="padding: 0.5rem 0;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
 
+      <!-- Replace video with a single banner image -->
+      <img src="static/images/eval1.png" 
+           alt="LiteVGGT pipeline" 
+           style="width:100%; border-radius:8px;">
 
+      <h2 class="subtitle has-text-centered">
+        We augment VGGT by placing a **Geometry-aware Token Merging** module on both sides of its global attention. Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
+      </h2>
 
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser" style="padding: 0.5rem 0;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <!-- Replace video with a single banner image -->
+      <img src="static/images/eval2.png" 
+           alt="LiteVGGT pipeline" 
+           style="width:100%; border-radius:8px;">
+
+      <h2 class="subtitle has-text-centered">
+        We augment VGGT by placing a **Geometry-aware Token Merging** module on both sides of its global attention. Within GA-merge, tokens are partitioned by the GA map, grouped and merged to reduce redundancy.
+      </h2>
+
+    </div>
+  </div>
+</section>
+<!-- End teaser -->
 
 
 <!--BibTex citation -->
